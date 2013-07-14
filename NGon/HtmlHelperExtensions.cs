@@ -5,8 +5,8 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Newtonsoft.Json;
 using System.Linq;
+using ServiceStack.Text;
 
 namespace NGon
 {
@@ -36,7 +36,8 @@ namespace NGon
 
             foreach (var prop in ngon)
             {
-                builder.AppendFormat("{0}.{1}={2};", @namespace, prop.Key, helper.Raw(JsonConvert.SerializeObject(prop.Value)));
+                builder.AppendFormat("{0}.{1}={2};", @namespace, prop.Key,
+                                     helper.Raw(JsonSerializer.SerializeToString(prop.Value)));
             }
 
             return builder.ToString();

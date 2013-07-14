@@ -51,7 +51,7 @@ Finally, anywhere in your javascript, you now have access to that value:
 Additional:
 ------
 
-This doesn't only work on simple types, it also works on any POCO object that can be serialized using the default `JavascriptSerializer`:
+This doesn't only work on simple types, it also works on any POCO object that can be serialized using the json serializer provided by `ServiceStack.Text`:
 
     public class HomeController : Controller
     {

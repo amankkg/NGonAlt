@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25008.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGon", "NGon\NGon.csproj", "{59A8F487-179F-47AE-8631-0AAF99E89DE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGon.Tests", "NGon.Tests\NGon.Tests.csproj", "{16AFD75A-1563-474C-90BB-6E1B9785EBA0}"
@@ -21,10 +23,10 @@ Global
 		{16AFD75A-1563-474C-90BB-6E1B9785EBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16AFD75A-1563-474C-90BB-6E1B9785EBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16AFD75A-1563-474C-90BB-6E1B9785EBA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B4601DB-23C8-497E-8545-CDB3075C40A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B4601DB-23C8-497E-8545-CDB3075C40A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B4601DB-23C8-497E-8545-CDB3075C40A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B4601DB-23C8-497E-8545-CDB3075C40A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB80B839-2689-415E-B980-746549FEDF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB80B839-2689-415E-B980-746549FEDF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB80B839-2689-415E-B980-746549FEDF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB80B839-2689-415E-B980-746549FEDF1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -53,7 +53,7 @@ This doesn't only work on simple types, it also works on any POCO object that ca
     {
         public ActionResult Index()
         {
-            var person = new Person { FirstName = "John", LastName = "Doe", Age = 30 };
+            var person = new Person {FirstName = "Dollard", LastName = "Grunt", Age = 69};
             ViewBag.NGon.Person = person;
             return View();
         }

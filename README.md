@@ -12,16 +12,12 @@ Usage:
 
 The first thing you need to do when using NGon, is to add the NGonActionFilterAttribute to the global action filters:
 
-**Global.asax.cs**
+**App_Start/FilterConfig.cs** (assuming default MVC5 scaffolding)
 
-        protected void Application_Start()
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            AreaRegistration.RegisterAllAreas();
-
-            GlobalFilters.Filters.Add(new NGonActionFilterAttribute());
-
-            RegisterGlobalFilters(GlobalFilters.Filters);
-            RegisterRoutes(RouteTable.Routes);
+            filters.Add(new NGonActionFilterAttribute());
+            filters.Add(new HandleErrorAttribute());
         }
 
 Then, in your controller, you can add any value to the dynamic NGon property of the ViewBag:

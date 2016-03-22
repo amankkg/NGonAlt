@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h2>NGon sample</h2>
+<hr />
+<input type="button" class="btn btn-danger" value="Show person data" id="button" />
+<div id="output" class="text-danger"></div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#button").click(function () {
+                var person = ngon.Person;
+                var div = $("#output");
+                div.html('');
+                div.append("<br />Name: " + person.FirstName + " " + person.LastName);
+                div.append("<br />Birth Date: " + new Date(parseInt(person.BirthDate.substr(6))).toDateString());
+                div.append("<br />Address: " + person.Address.HouseNumber + ", " + person.Address.StreetName + " st., " + person.Address.County);
+            });
+        });
+    </script>
+    }

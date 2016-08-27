@@ -1,6 +1,7 @@
 NGon - Easily send your variables to JavaScript
 ===============
 
+_this repo is a fork of [original one](https://github.com/brooklynDev/NGon) and I will abandon it after [this PR](https://github.com/brooklynDev/NGon/issues/2) gets accepted_
 
 ----------
 
